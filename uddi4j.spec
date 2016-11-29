@@ -2,7 +2,7 @@
 %{!?scl:%global pkg_name %{name}}
 %{?java_common_find_provides_and_requires}
 
-%global baserelease 1
+%global baserelease 2
 
 Name:		%{?scl_prefix}uddi4j
 Version:	2.0.5
@@ -29,6 +29,7 @@ BuildRequires:	%{?scl_prefix}axis
 BuildRequires:	%{?scl_prefix_java_common}xerces-j2
 
 BuildRequires:	%{?scl_prefix_java_common}jpackage-utils
+BuildRequires:	zip
 
 Requires:	%{?scl_prefix}axis
 Requires:	%{?scl_prefix_java_common}xerces-j2
@@ -106,6 +107,9 @@ install -p -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_mavenpomdir}/JPP-%{pkg_name}.pom
 %{_javadocdir}/%{pkg_name}
 
 %changelog
+* Tue Jul 26 2016 Mat Booth <mat.booth@redhat.com> - 2.0.5-12.2
+- Add BR on "zip" for EL6
+
 * Tue Jul 26 2016 Mat Booth <mat.booth@redhat.com> - 2.0.5-12.1
 - Auto SCL-ise package for rh-eclipse46 collection
 
