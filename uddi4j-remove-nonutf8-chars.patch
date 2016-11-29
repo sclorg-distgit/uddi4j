@@ -1,0 +1,26 @@
+diff -ur uddi4j/src.orig/org/uddi4j/datatype/business/Contact.java uddi4j/src/org/uddi4j/datatype/business/Contact.java
+--- uddi4j/src.orig/org/uddi4j/datatype/business/Contact.java	2006-06-27 10:07:38.000000000 +0100
++++ uddi4j/src/org/uddi4j/datatype/business/Contact.java	2012-05-28 18:25:04.646879563 +0100
+@@ -33,7 +33,7 @@
+  * responses from methods in the UDDIProxy class.
+  *
+  * <p><b>Element description:</b>
+- * <p>Data: Can contain a contact’s name, address, phone, e-mail, and a description
++ * <p>Data: Can contain a contact's name, address, phone, e-mail, and a description
+  * of the contact.
+  * 
+  * @author David Melgar (dmelgar@us.ibm.com)
+diff -ur uddi4j/src.orig/org/uddi4j/datatype/tmodel/TModel.java uddi4j/src/org/uddi4j/datatype/tmodel/TModel.java
+--- uddi4j/src.orig/org/uddi4j/datatype/tmodel/TModel.java	2006-06-27 10:07:36.000000000 +0100
++++ uddi4j/src/org/uddi4j/datatype/tmodel/TModel.java	2012-05-28 18:25:44.969109399 +0100
+@@ -120,8 +120,8 @@
+    public static final String OPERATORS_TMODEL_KEY = "UUID:327A56F0-3299-4461-BC23-5CD513E95C55";
+ 
+    /**
+-    * D-U-N-S® Number Identifier System [dnb-com:D-U-N-S]<BR>
+-    * This tModel is used for the Dun & Bradstreet D-U-N-S® Number identifier.
++    * D-U-N-S Number Identifier System [dnb-com:D-U-N-S]<BR>
++    * This tModel is used for the Dun & Bradstreet D-U-N-S Number identifier.
+     */
+    public static final String D_U_N_S_TMODEL_KEY = "UUID:8609C81E-EE1F-4D5A-B202-3EB13AD01823";
+ 

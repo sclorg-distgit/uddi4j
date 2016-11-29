@@ -1,0 +1,20 @@
+--- uddi4j/build.xml.orig	2012-05-28 18:18:35.350315223 +0100
++++ uddi4j/build.xml	2012-05-28 19:16:41.540728041 +0100
+@@ -102,7 +102,7 @@
+ 
+ 	<!-- Edit these property values to point to the correct locations of these jars. -->
+     <property name="w3cdom.location" value="xerces.jar;"/>
+-    <property name="jaxrpc.location" value="j2ee.jar"/>
++    <property name="jaxrpc.location" value="jaxrpc.jar"/>
+     <property name="saaj.location" value="saaj.jar"/>
+     <property name="apache.soap.location" value="soap.jar"/>
+     <property name="apache.axis.location" value="axis.jar"/>
+@@ -121,7 +121,7 @@
+ 	<echo message="UDDI4J build classpath = ${classpath.to.echo}"/>
+ 	
+ 	<!-- Edit this property value to point to the correct location of the javac.exe file. -->
+-	<property name="javac.executable" value="javac.exe"/>
++	<property name="javac.executable" value="javac"/>
+ 
+ 	<available 	classname="org.apache.soap.messaging.Message"
+ 				classpathref="uddi4j.build.classpath"
